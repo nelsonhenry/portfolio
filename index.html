@@ -213,11 +213,14 @@
       </div>
       <div class="w c4">
         <div class="laptop video-ctn" style="background: #000;">
-          <div class="frame"> <video loop muted controls playsinline preload="auto" style="z-index: 10000000000;">
+          <div class="frame" style="position: relative">
+            <video loop muted preload="auto">
               <source src="data/warp.mp4" type="video/mp4">
-                <img src="data/warp_1.png"
+            </video>
+                <img class="video-fallback" src="data/warp_1.png"
                 data-srcset="data/warp_1.png 900w, data/warp_1s.png 400w"
-                sizes="(max-width: 768px) calc(100vw - 40px), 100vw" alt="Warp Records Newsletter"> </video> </div>
+                sizes="(max-width: 768px) calc(100vw - 40px), 100vw" alt="Warp Records Newsletter">
+              </div>
         </div>
         <div class="text">
           <h2>Warp Records, Newsletter, 2018 <sup>(exercice)</sup><span class="slash"> / </span><span class="info">Show

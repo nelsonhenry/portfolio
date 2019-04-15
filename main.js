@@ -3345,9 +3345,11 @@ if (navigator.appVersion.indexOf("Win") != -1) {
 if (isMobile.any()) {
   $('body').removeClass('desktop');
   $('#crs').hide();
+  $('.video-fallback').show();
 } else {
   $('body').addClass('desktop');
   $('#crs').show();
+  $('.video-fallback').hide();
 };
 let w = $(window);
 let h = $('.header');
