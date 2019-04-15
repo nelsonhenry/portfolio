@@ -54,7 +54,9 @@
    display: block
  }
 
- .c2, .c3, .c4 {
+ .c2,
+ .c3,
+ .c4 {
    max-width: 900px
  }
 
@@ -219,10 +221,25 @@
  body {
    color: var(--fgc);
    background: var(--bgc2);
-   font-family: 'Roboto', 'px', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+   font-family:
+     'px',
+     'Roboto',
+     'Helvetica Neue',
+     'Helvetica',
+     'Arial',
+     sans-serif;
    font-weight: normal;
    font-size: 20px;
    line-height: 26px
+ }
+
+ body.win {
+   font-family:
+     'Roboto',
+     'Helvetica Neue',
+     'Helvetica',
+     'Arial',
+     sans-serif;
  }
 
  @media screen and (max-width: 1600px) {

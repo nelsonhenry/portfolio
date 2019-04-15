@@ -225,6 +225,15 @@ var isMobile = {
     return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
   }
 };
+
+if (navigator.appVersion.indexOf("Win") != -1) {
+  console.log('win');
+  $('body').addClass('win');
+} else {
+  console.log('other');
+  $('body').removeClass('win');
+};
+
 if (isMobile.any()) {
   $('body').removeClass('desktop');
   $('#crs').hide();
