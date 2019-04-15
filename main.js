@@ -3433,12 +3433,12 @@ function changeCrs() {
     })
   }
 };
-// $('.video-ctn').hover(function () {
-//   $(this).find('video')[0].play()
-// }, function () {
-//   $(this).find('video')[0].pause();
-//   $(this).find('video')[0].currentTime = 0
-// });
+$('.video-ctn').hover(function () {
+  $(this).find('video')[0].play()
+}, function () {
+  $(this).find('video')[0].pause();
+  $(this).find('video')[0].currentTime = 0
+});
 reveal();
 mP();
 changeCrs();
